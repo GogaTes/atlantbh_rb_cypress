@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "896efb1c-dee0-4453-b171-70553cb6c512",
+		"name": "Atlatnbh Task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"_postman_id": "7e2fcea7-5b6e-4067-880a-7ef372314518",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{baseadmin}}/auth?username=admin&password=password123",
+					"host": [
+						"{{baseadmin}}"
+					],
+					"path": [
+						"auth"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "admin"
+						},
+						{
+							"key": "password",
+							"value": "password123"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Booking",
+			"_postman_id": "b3c269a2-8106-478a-8c69-77d41f8c6968",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{baseadmin}}/booking"
+			},
+			"response": []
+		},
+		{
+			"name": "CreateBooking",
+			"_postman_id": "cc5fd358-f9df-408b-ac47-18ff60cb9269",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstname\" : \"Goga\",\r\n    \"lastname\" : \"Brown\",\r\n    \"totalprice\" : 111,\r\n    \"depositpaid\" : true,\r\n    \"bookingdates\" : {\r\n        \"checkin\" : \"2023-07-07\",\r\n        \"checkout\" : \"2023-08-07\"\r\n    },\r\n    \"additionalneeds\" : \"Breakfast\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{baseadmin}}/booking"
+			},
+			"response": []
+		},
+		{
+			"name": "GetBooking",
+			"_postman_id": "53628b82-28f9-4896-9fc5-b73ba2c7f334",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseadmin}}/booking/:id",
+					"host": [
+						"{{baseadmin}}"
+					],
+					"path": [
+						"booking",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "",
+							"description": "The id of the booking you would like to retrieve",
+							"type": "string"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "710da896-47d5-42ea-a5f6-2dfc1d8cd461",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "175d26dc-caa7-4646-b359-5e73a49c6736",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "e7df254c-50d1-4512-9b47-9b2bafca8896",
+			"key": "baseadmin",
+			"value": "https://restful-booker.herokuapp.com",
+			"type": "string"
+		}
+	]
+}

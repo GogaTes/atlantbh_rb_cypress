@@ -1,5 +1,6 @@
 Cypress Project Setup
 
+
 Step 1 - Install Node.js
 
 Step 2 - Install Visual Studio Code

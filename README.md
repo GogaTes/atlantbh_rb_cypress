@@ -21,3 +21,5 @@ npx cypress verify
 Step 7 - Open Cypress
 
 npx cypress open
+
+The file to be run is located in the cypress → e2e → login.cy.js

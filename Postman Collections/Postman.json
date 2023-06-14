@@ -15,7 +15,7 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "{{baseadmin}}/auth?username=admin&password=password123",
+					"raw": "{{baseadmin}}/auth?username=admin&password=password",
 					"host": [
 						"{{baseadmin}}"
 					],
@@ -29,7 +29,7 @@
 						},
 						{
 							"key": "password",
-							"value": "password123"
+							"value": "password"
 						}
 					]
 				}
@@ -125,7 +125,7 @@
 	],
 	"variable": [
 		{
-			"id": "703ef613-9a1e-4142-b0a1-ed4f9f551304",
+			"id": "9b303019-fbe1-4063-876c-244196e777eb",
 			"key": "baseadmin",
 			"value": "https://restful-booker.herokuapp.com"
 		}

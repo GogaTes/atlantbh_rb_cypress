@@ -7,7 +7,7 @@
 	"item": [
 		{
 			"name": "Login",
-			"_postman_id": "7e2fcea7-5b6e-4067-880a-7ef372314518",
+			"id": "7e2fcea7-5b6e-4067-880a-7ef372314518",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -38,7 +38,7 @@
 		},
 		{
 			"name": "Booking",
-			"_postman_id": "b3c269a2-8106-478a-8c69-77d41f8c6968",
+			"id": "b3c269a2-8106-478a-8c69-77d41f8c6968",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -51,7 +51,7 @@
 		},
 		{
 			"name": "CreateBooking",
-			"_postman_id": "cc5fd358-f9df-408b-ac47-18ff60cb9269",
+			"id": "cc5fd358-f9df-408b-ac47-18ff60cb9269",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -73,7 +73,7 @@
 		},
 		{
 			"name": "GetBooking",
-			"_postman_id": "53628b82-28f9-4896-9fc5-b73ba2c7f334",
+			"id": "53628b82-28f9-4896-9fc5-b73ba2c7f334",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -93,8 +93,7 @@
 						{
 							"key": "id",
 							"value": "",
-							"description": "The id of the booking you would like to retrieve",
-							"type": "string"
+							"description": "The id of the booking you would like to retrieve"
 						}
 					]
 				}
@@ -126,10 +125,9 @@
 	],
 	"variable": [
 		{
-			"id": "e7df254c-50d1-4512-9b47-9b2bafca8896",
+			"id": "703ef613-9a1e-4142-b0a1-ed4f9f551304",
 			"key": "baseadmin",
-			"value": "https://restful-booker.herokuapp.com",
-			"type": "string"
+			"value": "https://restful-booker.herokuapp.com"
 		}
 	]
 }
